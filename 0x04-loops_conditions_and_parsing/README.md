@@ -1,158 +1,120 @@
-# Loops, conditions and parsing
-## General Objectives:
-- How to create SSH keys
-- What is the advantage of using `#!/usr/bin/env bash` over `#!/bin/bash`
-- How to use `while`, `until` and `for` loops
-- How to use `if`, `else`, `elif` and `case` condition statements
-- How to use the `cut` command
-- What are files and other comparison operators, and how to use them
+# 0x04. Loops, conditions and parsing 
 
-## General Requirement
-- Allowed editors: vi, vim, emacs
-- All your files will be interpreted on Ubuntu 20.04 LTS
-- All your files should end with a new line
-- A README.md file, at the root of the folder of the project, is mandatory
-- All your Bash script files must be executable
-- You are not allowed to use awk
-- Your Bash script must pass Shellcheck (version 0.7.0) without any error
-- The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
-- The second line of all your Bash scripts should be a comment explaining
-- what is the script doing
+## Resource
 
-## Mandatory Tasks
-In this project, I was able to complete the following tasks:
+- [Loops sample](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_01.html)
+- [Variable assignment and arithmetic](https://tldp.org/LDP/abs/html/ops.html)
+- [Comparison operators](https://tldp.org/LDP/abs/html/comparison-ops.html)
+- [File test operators](https://tldp.org/LDP/abs/html/fto.html)
+- [Make your scripts portable](https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html)
 
-### 0. Create a SSH RSA key pair
-Share your public key in your answer file [0-RSA_public_key.pub](./0-RSA_public_key.pub)
+## Tasks
 
+<details>
+<summary><a href="./0-RSA_public_key.pub">0. Create a SSH RSA key pair</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/HkVtBRMg/image.png' border='0' alt='image'/></a><br>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys">Linux and Mac OS users</a></li>
+      <li><a href="https://docs.rackspace.com/support/how-to/generating-rsa-keys-with-ssh-puttygen/">Windows users</a></li>
+      <li><a href="https://www.youtube.com/watch?v=iuqXFC_qIvA&t=46s">data centers</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
 
-### 1. For Best School loop
-Write a Bash script that displays `Best School` 10 times.
+<details>
+<summary><a href="./1-for_best_school">1. For Best School loop</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XYvX60Nr/image.png' border='0' alt='image'/></a>
+</details>
 
-**Requirement:**
+<details>
+<summary><a href="./2-while_best_school">2. While Best School loop</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/KcfDJy01/image.png' border='0' alt='image'/></a>
+</details>
 
-- You must use the `for` loop (`while` and `until` are forbidden)
+<details>
+<summary><a href="./3-until_best_school">3. Until Best School loop</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/y8jvVtx4/image.png' border='0' alt='image'/></a>
+</details>
 
+<details>
+<summary><a href="./4-if_9_say_hi">4. If 9, say Hi!</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/vBCCykBL/image.png' border='0' alt='image'/></a>
+</details>
 
-### 2. While Best School loop
-Write a Bash script that displays `Best School` 10 times.
+<details>
+<summary><a href="./5-4_bad_luck_8_is_your_chance">5. 4 bad luck, 8 is your chance</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/SxMkcYGF/image.png' border='0' alt='image'/></a><br>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://freakonomics.com/2006/07/05/lucky-8s-in-china/">8 in the Chinese culture</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Chinese_numerology#Four">4 in the Chinese culture</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
 
-**Requirements:**
+<details>
+<summary><a href="./6-superstitious_numbers">6. Superstitious numbers</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XvHdRPT0/image.png' border='0' alt='image'/></a>
+</details>
 
-- You must use the `while` loop (`for` and `until` are forbidden)
+<details>
+<summary><a href="./7-clock">7. Clock</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/YqRc5vMR/image.png' border='0' alt='image'/></a>
+</details>
 
+<details>
+<summary><a href="./8-for_ls">8. For ls</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/wjzrjgTv/image.png' border='0' alt='image'/></a>
+</details>
 
-### 3. Until Best School loop
-Write a Bash script that displays `Best School` 10 times.
+<details>
+<summary><a href="./9-to_file_or_not_to_file">9. To file, or not to file</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/RFwsBY5f/image.png' border='0' alt='image'/></a>
+</details>
 
-**Requirements:**
+<details>
+<summary><a href="./10-fizzbuzz">10. FizzBuzz</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/85bsJLq3/image.png' border='0' alt='image'/></a>
+</details>
 
-- You must use the `until` loop (`for` and `while` are forbidden)
+<details>
+<summary><a href="./100-read_and_cut">11. Read and cut</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/FHQyLVqF/image.png' border='0' alt='image'/></a>
+</details>
 
+<details>
+<summary><a href="./101-tell_the_story_of_passwd">12. Tell the story of passwd</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/g0vNZG3x/image.png' border='0' alt='image'/></a>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/">Understanding /etc/passwd</a></li>
+      <li><a href="https://tldp.org/LDP/abs/html/internalvariables.html">IFS (internal field separator)</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
 
-### 4. If 9, say Hi!
-Write a Bash script that displays `Best School` 10 times, but for the 9th
-iteration, displays `Best School` and then `Hi` on a new line.
+<details>
+<summary><a href="./102-lets_parse_apache_logs">13. Let's parse Apache logs</a></summary><br>
+<a href='https://postimg.cc/rDm2Zg6H' target='_blank'><img src='https://i.postimg.cc/P5bfxFSd/image.png' border='0' alt='image'/></a>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache HTTP Server</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">HTTP status codes</a></li>
+      <li><a href="https://www.the-art-of-web.com/system/logs/">System: Analyzing Apache log Files</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
 
-**Requirements:**
-
-- You must use the while loop (for and until are forbidden)
-- You must use the if statement
-
-
-### 5. 4 bad luck, 8 is your chance
-Write a Bash script that loops from 1 to 10 and:
-
-- displays `bad luck` for the 4th loop iteration
-- displays `good luck` for the 8th loop iteration
-- displays `Best School` for the other iterations
-
-**Requirements:**
-
-- You must use the `while` loop (`for` and `until` are forbidden)
-- You must use the `if`, `elif` and `else` statements
-
-
-### 6. Superstitious numbers
-Write a Bash script that displays numbers from 1 to 20 and:
-
-- displays `4` and then `bad luck from China` for the 4th loop iteration
-- displays `9` and then `bad luck from Japan` for the 9th loop iteration
-- displays `17` and then `bad luck from Italy` for the 17th loop iteration
-
-**Requirements:**
-
-You must use the `while` loop (`for` and `until` are forbidden)
-You must use the `case` statement
-
-
-### 7. Clock
-Write a Bash script that displays the time for 12 hours and 59 minutes:
-
-- display hours from 0 to 12
-- display minutes from 1 to 59
-
-**Requirements:**
-
-- You must use the `while` loop (`for` and `until` are forbidden)
-
-
-### 8. For ls
-Write a Bash script that displays:
-
-- The content of the current directory
-- In a list format
-- Where only the part of the name after the first dash is displayed
-
-**Requirements:**
-
-- You must use the for loop (while and until are forbidden)
-- Do not display hidden files
-
-
-### 9. To file, or not to file
-Write a Bash script that gives you information about the school file.
-
-**Requirements:**
-
-- You must use `if` and, `else` (`case` is forbidden)
-- Your Bash script should check if the file exists and print:
-  - if the file exists: `school file exists`
-  - if the file does not exist: `school file does not exist`
-- If the file exists, print:
-  - if the file is empty: `school file is empty`
-  - if the file is not empty: `school file is not empty`
-  - if the file is a regular file: `school is a regular file`
-  - if the file is not a regular file: (nothing)
-
-
-### 10. FizzBuzz
-Write a Bash script that displays numbers from 1 to 100.
-
-**Requirements:**
-
-- Displays `FizzBuzz` when the number is a multiple of 3 and 5
-- Displays `Fizz` when the number is multiple of 3
-- Displays `Buzz` when the number is a multiple of 5
-- Otherwise, displays the number
-- In a list format
-
-## Advanced Tasks
-
-### 11. Read and cut
-help: `read`
-
-Write a Bash script that displays the content of the file `/etc/passwd`.
-
-Your script should only display:
-
-- username
-- user id
-- Home directory path for the user
-**Requirements:**
-
-- You must use the `while` loop (`for` and `until` are forbidden)
-
-### 12. Tell the story of passwd
-### 13. Let's parse Apache logs
-### 14. Dig the data
+<details>
+<summary><a href="./103-dig_the-data">14. Dig the data</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/T2WBc5gs/image.png' border='0' alt='image'/></a>
+</details>
