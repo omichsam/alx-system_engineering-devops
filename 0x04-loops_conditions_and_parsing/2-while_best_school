@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# 2-while_best_school
 # This script is displaying "Best School" 10 
 x="0"
 while [ $x -lt 10 ]
