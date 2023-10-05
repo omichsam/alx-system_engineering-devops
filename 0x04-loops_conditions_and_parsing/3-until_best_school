@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# This script displays Holberton School 10 times using until loop
-i=0
-until [ $i -ge 10 ]; do
-    echo "Holberton School"
-    let i+=1
+# This script is displaying "Best School" 10 times
+x="0"
+until [ $x -ge 10 ]
+do
+    echo "Best School"
+    x=$((x+1))
 done
