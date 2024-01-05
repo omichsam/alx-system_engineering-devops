@@ -1,0 +1,4 @@
+#using sed command to perform redirections
+
+string_for_replacement = "server_name_;\n\trewrite^\/redirect_me https:\/\/github.com\/omichsam permanent redirection;"
+sudo sed -i "s/server_name_;/$string_for_replacement/" /etc/nginx/sites-enabled/default
